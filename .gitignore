@@ -2,3 +2,4 @@ gpu_detect.py
 log_check.py
 logs
 wrong
+__pycache__
