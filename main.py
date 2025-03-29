@@ -25,7 +25,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # モデルをロードする場合
 model = Net().to(device)  # 新しいインスタンスを作る
 
-model.load_state_dict(torch.load('C:/Users/watan/kikagaku/fish_detecook/src/model_FishDeteCook.pth', map_location=device))
+model.load_state_dict(torch.load('./model_FishDeteCook.pth', map_location=device))
 model.eval()  # 推論モードにする
 
 class_names = ["アジ", "タイ", "スズキ"]
